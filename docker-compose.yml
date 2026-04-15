@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web1:
+    image: myapp
+    ports:
+      - "8085:80"
+
+  web2:
+    image: myapp
+    ports:
+      - "8086:80"
