@@ -5,13 +5,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t myapp .'
+                sh 'docker build -t myapp .'
             }
         }
 
         stage('Verify Docker') {
             steps {
-                bat 'docker images'
+                sh 'docker images'
             }
         }
 
