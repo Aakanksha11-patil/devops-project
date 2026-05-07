@@ -3,15 +3,15 @@ pipeline {
 
     stages {
 
-        stage('Build Docker Image') {
+        stage('Hello') {
             steps {
-                sh 'docker build -t myapp .'
+                sh 'echo Jenkins Pipeline Working'
             }
         }
 
-        stage('Verify Docker') {
+        stage('System Info') {
             steps {
-                sh 'docker images'
+                sh 'uname -a'
             }
         }
 
